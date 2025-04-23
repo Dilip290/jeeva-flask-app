@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Agriculture Result - JEEVA</title>
+</head>
+<body>
+    <h2>Crop Analysis Result</h2>
+    <img src="{{ url_for('static', filename='uploads/' + image) }}" width="200"><br><br>
+    <p><strong>Crop Name:</strong> {{ result.crop_name }}</p>
+    <p><strong>Disease:</strong> {{ result.disease }}</p>
+    <p><strong>Recommended Soil:</strong> {{ result.soil }}</p>
+    <p><strong>Current Price:</strong> {{ result.price }}</p>
+    <p><strong>Suggested Pesticide:</strong> {{ result.pesticide }}</p>
+    <a href="{{ result.buy_link }}">Buy Pesticide</a>
+</body>
+</html>

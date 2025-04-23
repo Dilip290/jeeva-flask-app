@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Education Resources - JEEVA</title>
+</head>
+<body>
+    <h2>Suggested Learning Path</h2>
+    <p><strong>Your Interest:</strong> {{ interest }}</p>
+    <ul>
+        {% for suggestion in suggestions %}
+        <li>{{ suggestion }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
